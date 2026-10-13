@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhavendra Pratap Singh Gautam | Computer Science Student & Web Developer</title>
+  <meta name="description" content="Personal portfolio of Madhavendra Pratap Singh Gautam - B.Tech Computer Science Core student at JECRC University, Jaipur. Web Developer and tech enthusiast.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glow Orbs -->
+  <div class="background-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <!-- ==============================================================
+       HEADER & NAVIGATION
+       ============================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Home">
+        <span class="brand-badge">M</span>
+        <span class="brand-text">Madhavendra<span>.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i data-lucide="sun"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" title="Open Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div id="mobile-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <!-- ==============================================================
+         1. HOME / HERO SECTION
+         ============================================================== -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <!-- Status Badge -->
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>B.Tech CSE Core &bull; JECRC University</span>
+          </div>
+
+          <p class="hero-greeting">Hello there, I'm</p>
+          <h1 class="hero-name">
+            Madhavendra Pratap <br>
+            <span class="gradient-text">Singh Gautam</span>
+          </h1>
+
+          <div class="hero-role">
+            <i data-lucide="code-2"></i>
+            <span>Computer Science Student & Web Developer</span>
+          </div>
+
+          <div class="location-tag">
+            <i data-lucide="map-pin"></i>
+            <span>Jaipur, Rajasthan, India</span>
+          </div>
+
+          <p class="hero-tagline">
+            I am a B.Tech first year student of JECRC University studying Computer Science Core. 
+            Passionate about crafting fast, accessible web applications and building solid algorithmic foundations.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="folder-git-2"></i>
+              View My Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i data-lucide="mail"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <!-- EDIT HERE: Replace '#' with your GitHub profile URL -->
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <!-- EDIT HERE: Replace '#' with your LinkedIn profile URL -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:madhavendra@jecrcu.edu.in" class="social-icon-btn" aria-label="Send Email" title="Email Me">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <div class="profile-avatar-wrapper">
+              <div class="avatar-glow"></div>
+              <div class="avatar-initials">M</div>
+            </div>
+            <div class="profile-card-content">
+              <h2 class="profile-card-name">Madhavendra P. S. Gautam</h2>
+              <p class="profile-card-sub">B.Tech CSE (1st Year) &bull; Developer</p>
+              
+              <div class="profile-stat-box">
+                <div class="stat-item">
+                  <span class="stat-value">1st Year</span>
+                  <span class="stat-label">B.Tech Core</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">Jaipur</span>
+                  <span class="stat-label">Location</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         2. ABOUT SECTION
+         ============================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i data-lucide="user"></i> About Me</span>
+          <h2 class="section-title">Background & Aspirations</h2>
+          <p class="section-subtitle">A glimpse into my academic journey, passion for technology, and long-term aspirations.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Narrative Card -->
+          <div class="about-narrative reveal">
+            <div>
+              <p class="about-intro-highlight">
+                "I am a B.Tech first year student of JECRC University studying Computer Science Core."
+              </p>
+              <p class="about-text">
+                Currently based in <strong>Jaipur, Rajasthan</strong>, I am immersed in the fundamental principles of Computer Science. From mastering procedural programming and data structures to developing responsive websites, I enjoy solving problems and turning logical ideas into interactive digital solutions.
+              </p>
+              <p class="about-text">
+                As a developer, I believe in writing readable, maintainable code, designing clean user interfaces, and staying curious about modern web tools, frameworks, and software architectures.
+              </p>
+            </div>
+
+            <!-- Quick Metadata -->
+            <div class="about-meta-list">
+              <div class="meta-item">
+                <span class="meta-title">University</span>
+                <span class="meta-value">JECRC University, Jaipur</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-title">Degree & Branch</span>
+                <span class="meta-value">B.Tech Computer Science Core</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-title">Current Year</span>
+                <span class="meta-value">First Year (Class of 2028)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-title">Primary Focus</span>
+                <span class="meta-value">Web Development & DSA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlights / Feature Cards -->
+          <div class="about-cards-col">
+            <!-- Card 1: Background -->
+            <div class="about-feature-card reveal">
+              <div class="feature-icon-wrapper">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="feature-info">
+                <h3>Academic Foundation</h3>
+                <p>
+                  Studying Computer Science Core at JECRC University, focusing on core programming paradigms, discrete mathematics, and computer systems fundamentals.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2: Interests -->
+            <div class="about-feature-card reveal">
+              <div class="feature-icon-wrapper">
+                <i data-lucide="compass"></i>
+              </div>
+              <div class="feature-info">
+                <h3>Technical Interests</h3>
+                <p>
+                  Passionate about front-end web development, clean UI/UX design, responsive layouts, algorithmic problem solving, and open-source software collaboration.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3: Career Goals -->
+            <div class="about-feature-card reveal">
+              <div class="feature-icon-wrapper">
+                <i data-lucide="target"></i>
+              </div>
+              <div class="feature-info">
+                <h3>Career Goals</h3>
+                <p>
+                  Aspiring to become a proficient Full-Stack Software Engineer who engineers robust, scalable web applications that solve real-world community challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         3. SKILLS SECTION
+         ============================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i data-lucide="cpu"></i> Technical Toolkit</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Core programming languages, web standards, and developer tools in my current workflow.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <i data-lucide="terminal"></i>
+              </div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="code"></i> C / C++</span>
+              <span class="skill-pill"><i data-lucide="file-code-2"></i> Python</span>
+              <span class="skill-pill"><i data-lucide="braces"></i> JavaScript (ES6+)</span>
+              <span class="skill-pill"><i data-lucide="layout"></i> HTML5</span>
+              <span class="skill-pill"><i data-lucide="palette"></i> CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <i data-lucide="globe"></i>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="smartphone"></i> Responsive Design</span>
+              <span class="skill-pill"><i data-lucide="layout-grid"></i> CSS Flexbox & Grid</span>
+              <span class="skill-pill"><i data-lucide="mouse-pointer"></i> DOM Manipulation</span>
+              <span class="skill-pill"><i data-lucide="zap"></i> Clean UI / UX</span>
+              <span class="skill-pill"><i data-lucide="link"></i> RESTful APIs (Basics)</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+              <h3 class="category-title">Developer Tools</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="git-branch"></i> Git & GitHub</span>
+              <span class="skill-pill"><i data-lucide="monitor"></i> VS Code</span>
+              <span class="skill-pill"><i data-lucide="inspect"></i> Chrome DevTools</span>
+              <span class="skill-pill"><i data-lucide="command"></i> Command Line</span>
+              <span class="skill-pill"><i data-lucide="cloud"></i> GitHub Pages</span>
+            </div>
+          </div>
+
+          <!-- Category 4: CS Foundations -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <i data-lucide="layers"></i>
+              </div>
+              <h3 class="category-title">CS Foundations</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="binary"></i> Data Structures</span>
+              <span class="skill-pill"><i data-lucide="lightbulb"></i> Problem Solving</span>
+              <span class="skill-pill"><i data-lucide="boxes"></i> Object-Oriented Logic</span>
+              <span class="skill-pill"><i data-lucide="cpu"></i> Computer Fundamentals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         4. PROJECTS SECTION
+         ============================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i data-lucide="folder"></i> Portfolio Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Projects highlighting practical web development, responsive interfaces, and problem solving.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 
+            ===========================================================
+            PROJECT 1: Personal Portfolio Website
+            EDIT HERE: Update project title, description, or URLs below
+            ===========================================================
+          -->
+          <article class="project-card reveal">
+            <div class="project-banner">
+              <span class="project-badge-top">Live Project</span>
+              <i data-lucide="sparkles" class="project-banner-icon"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A clean, modern, and accessible personal portfolio website built with semantic HTML5, modern CSS3, and vanilla JavaScript. Features dark/light themes, mobile drawer menu, and smooth animations.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Responsive</span>
+              </div>
+              <div class="project-links">
+                <!-- EDIT HERE: Replace '#' with your GitHub repository URL -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+                <!-- EDIT HERE: Replace '#' with your Live Demo URL -->
+                <a href="#home" class="project-btn project-btn-primary">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 
+            ===========================================================
+            PROJECT 2: Student Academic Task Tracker
+            EDIT HERE: Update project title, description, or URLs below
+            ===========================================================
+          -->
+          <article class="project-card reveal">
+            <div class="project-banner">
+              <span class="project-badge-top">Web App</span>
+              <i data-lucide="check-square" class="project-banner-icon"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Task Tracker</h3>
+              <p class="project-desc">
+                A responsive productivity web application designed for university students to organize assignments, track course deadlines, and manage daily study schedules with browser localStorage persistence.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Local Storage</span>
+                <span class="project-tag">CSS Grid</span>
+                <span class="project-tag">UI/UX</span>
+              </div>
+              <div class="project-links">
+                <!-- EDIT HERE: Replace '#' with your GitHub repository URL -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+                <!-- EDIT HERE: Replace '#' with your Live Demo URL -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 
+            ===========================================================
+            PROJECT 3: Algorithm & Logic Visualizer
+            EDIT HERE: Update project title, description, or URLs below
+            ===========================================================
+          -->
+          <article class="project-card reveal">
+            <div class="project-banner">
+              <span class="project-badge-top">Logic & DSA</span>
+              <i data-lucide="bar-chart-2" class="project-banner-icon"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Algorithm & Logic Labs</h3>
+              <p class="project-desc">
+                An interactive demonstration showcasing foundational Computer Science algorithms, including sorting routines, search visualizers, and mathematical problem-solving scripts developed during core coursework.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">C++</span>
+                <span class="project-tag">Algorithms</span>
+                <span class="project-tag">Data Structures</span>
+              </div>
+              <div class="project-links">
+                <!-- EDIT HERE: Replace '#' with your GitHub repository URL -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+                <!-- EDIT HERE: Replace '#' with your Live Demo URL -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         5. CONTACT SECTION
+         ============================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"><i data-lucide="message-square"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Have an opportunity, collaboration idea, or question? Feel free to reach out anytime!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Profiles -->
+          <div class="contact-info-card reveal">
+            <div>
+              <div class="contact-info-header">
+                <h3>Contact Information</h3>
+                <p>
+                  I'm always excited to connect with fellow developers, mentors, and peers. Reach out directly via email or on my social profiles.
+                </p>
+              </div>
+
+              <div class="contact-methods">
+                <!-- University Email with Copy Button -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">University Email</span>
+                    <p class="contact-item-val" title="madhavendra@jecrcu.edu.in">madhavendra@jecrcu.edu.in</p>
+                  </div>
+                  <button id="copy-email-btn" class="copy-btn" aria-label="Copy email address" title="Copy email">
+                    <i data-lucide="copy"></i>
+                  </button>
+                </div>
+
+                <!-- Location Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">Location</span>
+                    <p class="contact-item-val">Jaipur, Rajasthan, India</p>
+                  </div>
+                </div>
+
+                <!-- University Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i data-lucide="school"></i>
+                  </div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">Institution</span>
+                    <p class="contact-item-val">JECRC University</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profiles & Socials -->
+            <div class="contact-profiles-group">
+              <h4 class="profiles-title">Connect On Social Profiles</h4>
+              <div class="contact-social-pills">
+                <!-- EDIT HERE: Replace '#' with your LinkedIn URL -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                  <i data-lucide="linkedin"></i> LinkedIn
+                </a>
+                <!-- EDIT HERE: Replace '#' with your GitHub URL -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-pill">
+                  <i data-lucide="github"></i> GitHub
+                </a>
+                <!-- EDIT HERE: Add or update LeetCode/Portfolio links -->
+                <a href="mailto:madhavendra@jecrcu.edu.in" class="social-link-pill">
+                  <i data-lucide="send"></i> Direct Email
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-card reveal">
+            <h3>Send a Message</h3>
+            <p>Fill out the form below to send an email inquiry directly to my inbox.</p>
+            
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Hello Madhavendra, I'd like to talk about..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <i data-lucide="send"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================================
+       FOOTER
+       ============================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">
+        &copy; 2026 <strong>Madhavendra Pratap Singh Gautam</strong>. All rights reserved.
+      </p>
+      <a href="#home" class="back-to-top" aria-label="Back to top of page">
+        Back to Top <i data-lucide="arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Custom JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
